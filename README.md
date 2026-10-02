@@ -16,6 +16,13 @@
 
 ---
 
+<div align="center">
+  <br>
+  <a href="https://app.pluralsight.com/ilx/video-courses/c-sharp-14-generics-iteration-state-management">
+    <img src="assets/course-thumbnail.jpg" alt="C# 14 Generics, Iteration, and State Management course thumbnail" width="800">
+  </a>
+</div>
+
 ## 📖 About the course
 
 Real-world backend code is full of repeated patterns: helper methods that differ only by type, nested loops with awkward break-out logic, tangled state-checking `switch` statements, and defensive `null` checks scattered through every layer.
