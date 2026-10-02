@@ -1,0 +1,11 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path=".editorconfig" />
+  </Folder>
+  <Project Path="Module1/Module1.csproj" />
+  <Project Path="Module2/Module2.csproj" />
+  <Project Path="Module3/Module3.csproj" />
+  <Project Path="Module4/Module4.csproj" />
+  <Project Path="Module5/Module5.csproj" />
+  <Project Path="Module6/Module6.csproj" />
+</Solution>

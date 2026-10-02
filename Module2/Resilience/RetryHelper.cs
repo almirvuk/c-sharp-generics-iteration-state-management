@@ -1,11 +1,7 @@
-﻿using Module2.Domain;
-using Module2.Exceptions;
-using Module2.Transport;
-using HttpRequestException = Module2.Exceptions.HttpRequestException;
+﻿namespace Module2.Resilience;
 
-public static class RetryHelpers
+public static class RetryHelper
 {
-    // Retry a database operation up to 3 times with linear backoff.
     public static Order RetryDbCall(Func<Order> operation)
     {
         for (var attempt = 1; ; attempt++)
@@ -21,7 +17,6 @@ public static class RetryHelpers
         }
     }
 
-    // Retry an HTTP call up to 3 times with linear backoff.
     public static HttpResponse RetryHttpCall(Func<HttpResponse> operation)
     {
         for (var attempt = 1; ; attempt++)
@@ -37,7 +32,6 @@ public static class RetryHelpers
         }
     }
 
-    // Retry a broker publish up to 3 times with linear backoff.
     public static bool RetryPublish(Func<bool> operation)
     {
         for (var attempt = 1; ; attempt++)

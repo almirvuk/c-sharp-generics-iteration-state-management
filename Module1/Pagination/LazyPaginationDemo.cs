@@ -1,8 +1,5 @@
 namespace Module1.Pagination;
 
-// Module 1, Clip 4 — Building a Lazy Pagination Cursor.
-// The payoff is the fetch counts: the SAME iterator does very different amounts
-// of work depending on how the caller consumes it.
 public static class LazyPaginationDemo
 {
     public static void Run()
